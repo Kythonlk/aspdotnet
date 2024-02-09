@@ -1,0 +1,27 @@
+@model IEnumerable<webmvc.Models.Quote>
+
+<table class="min-w-full divide-y divide-gray-200 shadow-sm">
+    <thead class="bg-gray-50">
+        <tr>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Quote
+            </th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Author
+            </th>
+        </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+        @foreach (var quote in Model)
+        {
+            <tr>
+                <td class="px-6 py-4 text-sm text-left text-red-600">
+                    @quote.Text
+                </td>
+                <td class="px-6 py-4 text-left text-sm text-green-600">
+                    @quote.Author
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

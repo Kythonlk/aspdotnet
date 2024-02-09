@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mt-10">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Test Project C#, asp.net, tailwind, htmx Modern web app stack</h1>
+    <button hx-get="/Home/RandomQuote" hx-target="#quote-placeholder" hx-trigger="click" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show Random Quote
+    </button>
+
+    <div id="quote-placeholder" class="mt-4 text-lg text-green-600">
+    </div>
+</div>
